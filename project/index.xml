@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Yuxuan Zhang</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu49beec8ad6e93a8d487adf5d5e16e1b2_18547_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>Efficient 3D Content Generation</title>
+      <link>/project/text_to_3d/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>/project/text_to_3d/</guid>
+      <description>&lt;p&gt;Text-to-3D content creation utilizing powerful text-to-image generation ability of Stable Diffusion and NeRF,
+supervised by &lt;a href=&#34;https://sites.google.com/view/qsun&#34;&gt;Prof. Qiang Sun&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Utilized knowledge distillation techniques to transfer knowledge from a teacher U-Net to a student U-Net for 2D diffusion models, achieving a 30% enhancement in 3D content generation speed&lt;/li&gt;
+&lt;li&gt;Leveraged the advanced text-to-image generation capabilities of ControlNet and Stable Diffusion with conditional control for detailed and fine-grained 3D object creation, improving the stability of the generation process&lt;/li&gt;
+&lt;li&gt;Incorporated 3D Gaussian Splatting in lieu of the traditional NeRF component, achieving a significant boost in
+generation speed and generated content quality&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Model Compression for Unmanned Aerial Vehicle’s Companion Computer</title>
+      <link>/project/model_compression/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>/project/model_compression/</guid>
+      <description>&lt;p&gt;Model compression and inference optimization for drone research in
+&lt;a href=&#34;https://soti.net/products/soti-aerospace/&#34;&gt;SOTI Aerospace Research Team&lt;/a&gt;,
+supervised by &lt;a href=&#34;https://www.cs.toronto.edu/~nandita/&#34;&gt;Prof. Nandita Vijaykumar&lt;/a&gt;
+and &lt;a href=&#34;https://www.linkedin.com/in/sunil-jacob-6ab893152/&#34;&gt;Dr. Sunil Jacob&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Previous Model &lt;br&gt; (SegFormer)&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Current Model &lt;br&gt; (EfficientViT with &lt;br&gt; Model Compression)&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Δ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;mloU&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;46.51&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;50.48&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;+ 8.5%&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Latency (s)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0.0927&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0.0310&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;- 66.56%&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;FPS&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;10.79&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;32.26&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;+ 198.98%&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Designed a model compression pipeline to accelerate vision models, especially for real-time indoor scene segmentation on drone’s companion computers&lt;/li&gt;
+&lt;li&gt;Introduced a novel &lt;strong&gt;feature-based knowledge distillation&lt;/strong&gt; method for image classification and semantic segmentation, combining self-supervised learning with reused classifier&lt;/li&gt;
+&lt;li&gt;Attained a remarkable &lt;strong&gt;79.91%&lt;/strong&gt; classification accuracy on CIFAR-100 with ResNet-8x4 student model, surpassing state-of-the-art approaches by &lt;strong&gt;1.83%&lt;/strong&gt; (e.g., SimKD, DIST, and DKD)&lt;/li&gt;
+&lt;li&gt;Deployed SegFormer on the Jetson Xavier board using OpenMMLab and PyTorch, achieving a &lt;strong&gt;16.14%&lt;/strong&gt; boost in &lt;strong&gt;mIoU&lt;/strong&gt; and a &lt;strong&gt;43.8%&lt;/strong&gt; reduction in &lt;strong&gt;model size&lt;/strong&gt; compared to the previous segmentation model&lt;/li&gt;
+&lt;li&gt;Developed a distillation codebase for MMSegmentation models, simplifying the implementation of distillation loss functions and training pipelines, thus facilitating knowledge distillation for semantic segmentation research&lt;/li&gt;
+&lt;li&gt;Optimized semantic segmentation models for drone deployment on the Jetson Orin using inference optimization and model quantization, leading to a notable 66.56% decrease in inference latency&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multimodal Medical Image Fusion</title>
+      <link>/project/dilran/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>/project/dilran/</guid>
+      <description>&lt;p&gt;An attention-based multi-scale feature learning network for multimodal medical image fusion,
+supervised by &lt;a href=&#34;https://davidlindell.com/&#34;&gt;Prof. David B. Lindell&lt;/a&gt;,
+for &lt;a href=&#34;https://www.cs.toronto.edu/~lindell/teaching/2529/&#34;&gt;CSC2529&lt;/a&gt; course project.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Conceptualized and developed the &lt;strong&gt;Dilated Residual Attention Network&lt;/strong&gt; (DILRAN), a state-of-the-art approach for medical image fusion. DILRAN amalgamates the strengths of the residual attention network, pyramid network, and dilated convolutions&lt;/li&gt;
+&lt;li&gt;Introduced Softmax Feature Weighted Strategy for fusion, achieving a &lt;strong&gt;14.26% higher PSNR&lt;/strong&gt; and &lt;strong&gt;1.97% higher FSIM&lt;/strong&gt; than other fusion strategies&lt;/li&gt;
+&lt;li&gt;Utilized dilated convolution to extract shallow features, preserving local information and details and increasing the receptive field size without inflating model parameters&lt;/li&gt;
+&lt;li&gt;Achieved state-of-the-art performance in image fusion metrics and subjective fused image qualities, surpassing existing models with &lt;strong&gt;12.97% higher PSNR&lt;/strong&gt; and &lt;strong&gt;1.49% higher FSIM&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Smart Hairstyle</title>
+      <link>/project/smart_hairstyle/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>/project/smart_hairstyle/</guid>
+      <description>&lt;p&gt;A hairstyle recommendation and try-on app based on our
+&lt;a href=&#34;https://link.springer.com/chapter/10.1007/978-3-030-82153-1_27&#34;&gt;CelebHair Paper&lt;/a&gt;,
+supervised by &lt;a href=&#34;https://www.researchgate.net/profile/Jinpeng-Chen-2&#34;&gt;Prof. Jinpeng Chen&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Led a team of four in developing a hairstyle recommendation system that &lt;strong&gt;suggests optimal hairstyles&lt;/strong&gt; based
+on facial images. Further introduced a try-on feature, aiding hairstylists in visualizing recommended hairstyles,
+addressing a persistent industry challenge&lt;/li&gt;
+&lt;li&gt;Introduced CelebHair, a &lt;strong&gt;pioneering large-scale dataset&lt;/strong&gt; for hairstyle recommendation, setting a new benchmark
+in terms of &lt;strong&gt;variety, veracity, and volume&lt;/strong&gt; compared with existing hairstyle-related datasets&lt;/li&gt;
+&lt;li&gt;Enhanced face shape classification performance using mosaic data augmentation, batch size
+auto-calculation, and CIoU. Employed YOLO with darknet as the backbone, achieving an &lt;strong&gt;87.45%&lt;/strong&gt; accuracy
+across five face shapes — a &lt;strong&gt;15% advancement&lt;/strong&gt; over leading existing methods&lt;/li&gt;
+&lt;li&gt;Utilized &lt;strong&gt;Spatial Transformer Network&lt;/strong&gt; for hairstyle classification, achieving &lt;strong&gt;enhanced robustness&lt;/strong&gt; by learning
+invariance to image translations, scaling, and rotations, crucial for diverse hairstyle shapes and textures&lt;/li&gt;
+&lt;li&gt;Developed a hairstyle recommendation system using Random Forests with scikit-learn, ingeniously &lt;strong&gt;transforming
+the recommendation problem into a classification task&lt;/strong&gt;, attaining an impressive &lt;strong&gt;87.03%&lt;/strong&gt; accuracy&lt;/li&gt;
+&lt;li&gt;Devised a face-swapping algorithm using &lt;strong&gt;OpenCV&lt;/strong&gt; and &lt;strong&gt;facial key points matching&lt;/strong&gt;, creating a ”Virtual Mirror”
+feature, empowering users to virtually experiment with various hairstyles&lt;/li&gt;
+&lt;li&gt;Crafted a hairstyle recommendation application using &lt;strong&gt;Vue&lt;/strong&gt;, &lt;strong&gt;Flask&lt;/strong&gt; and &lt;strong&gt;SQLite&lt;/strong&gt;, designed to assist hairstylists. This
+app notably enhanced service quality, resulting in &lt;strong&gt;improved satisfaction levels&lt;/strong&gt; within collaborative barbershops&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
